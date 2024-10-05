@@ -16,11 +16,13 @@
     ./home/programs/wofi.nix
     ./home/programs/hyprlock.nix
     ./home/programs/neovim.nix
-    ./home/programs/zsh.nix
     ./home/programs/starship.nix
     ./home/programs/fzf.nix
     ./home/programs/zoxide.nix
     ./home/programs/bottom.nix
+    ./home/programs/bash.nix
+    ./home/programs/bacon.nix
+    ./home/programs/vesktop.nix
     ./home/services/hypridle.nix
     ./home/services/hyprpaper.nix
     ./home/services/mako.nix

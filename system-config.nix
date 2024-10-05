@@ -46,12 +46,10 @@
     isNormalUser = true;
     description = "Olle Lukowski";
     extraGroups = [ "networkmanager" "wheel" ];
-    shell = pkgs.zsh;
+    shell = pkgs.bash;
   };
 
   programs = {
-    zsh.enable = true;
-
     hyprland = {
       enable = true;
       package = inputs.hyprland.packages."${pkgs.system}".hyprland;

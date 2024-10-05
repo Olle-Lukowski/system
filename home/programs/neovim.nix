@@ -124,6 +124,7 @@
 			luasnip.enable = true;
 			markdown-preview.enable = true;
 			lsp-format.enable = true;
+      leap.enable = true;
 
 			lualine = {
 			  enable = true;
