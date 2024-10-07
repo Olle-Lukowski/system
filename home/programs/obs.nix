@@ -1,5 +1,5 @@
 { ... }:
 
 {
-  programs.obs.enable = true;
+  programs.obs-studio.enable = true;
 }

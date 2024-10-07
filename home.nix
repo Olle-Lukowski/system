@@ -23,6 +23,9 @@
     ./home/programs/bash.nix
     ./home/programs/bacon.nix
     ./home/programs/vesktop.nix
+    ./home/programs/obs.nix
+    ./home/programs/mpv.nix
+    ./home/programs/thunar.nix
     ./home/services/hypridle.nix
     ./home/services/hyprpaper.nix
     ./home/services/mako.nix
@@ -30,7 +33,7 @@
 
   hyprland.monitors = [
     {
-      name = "DP-2";
+      name = "DP-1";
       width = 1920;
       height = 1080;
       refreshRate = 144;
