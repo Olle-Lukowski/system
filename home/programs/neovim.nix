@@ -147,8 +147,12 @@
         enable = true;
 
 	      grammarPackages = with pkgs.vimPlugins.nvim-treesitter.builtGrammars; [
-	        nix toml markdown regex rust json
+	        nix toml markdown regex rust json asm
 	      ];
+
+        settings = {
+          indent.enable = true;
+        };
       };
 
 			lsp = {
