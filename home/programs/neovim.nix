@@ -113,6 +113,14 @@
 				  desc = "Rename symbol (LSP)";
 				};
 			}
+			{
+			  action = "<CMD>lua require 'luasnip'.expand()<CR>";
+				key = "<Tab>";
+				options = {
+				  desc = "Expand snippet";
+				};
+        mode = "i";
+			}
 		];
 
     plugins = {
@@ -121,10 +129,24 @@
 			bufferline.enable = true;
 			oil.enable = true;
 			nvim-autopairs.enable = true;
-			luasnip.enable = true;
 			markdown-preview.enable = true;
 			lsp-format.enable = true;
       leap.enable = true;
+
+      vimtex = {
+        enable = true;
+
+        settings = {
+          view_method = "zathura";
+        };
+      };
+
+			luasnip = {
+        enable = true;
+        settings = {
+          enable_autosnippets = true;
+        };
+      };
 
 			lualine = {
 			  enable = true;
@@ -218,9 +240,19 @@
 
 		extraPlugins = with pkgs.vimPlugins; [
 		  base16-nvim
+      (pkgs.vimUtils.buildVimPlugin {
+        name = "luasnip-latex-snippets";
+        src = pkgs.fetchFromGitHub {
+          owner = "iurimateus";
+          repo = "luasnip-latex-snippets.nvim";
+          rev = "4b91f28d91979f61a3e8aef1cee5b7c7f2c7beb8";
+          hash = "sha256-Y8TZCu5iBfnW6GuKZMOaynHs57U6Qa0YBycG8MIW2Qs=";
+        };
+      })
 		];
 
 		extraConfigLua = with config.colorScheme.palette; ''
+      require'luasnip-latex-snippets'.setup()
 		  require 'base16-colorscheme'.setup {
 			  base00 = '#${base00}',
 			  base01 = '#${base01}',

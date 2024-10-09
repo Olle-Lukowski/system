@@ -1,4 +1,4 @@
-{ inputs, ... }:
+{ inputs, config, ... }:
 
 {
   home.username = "olle";
@@ -20,7 +20,12 @@
     ./home/programs/bash.nix
     ./home/programs/bacon.nix
     ./home/programs/vesktop.nix
+    ./home/programs/zathura.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
+
+  home.sessionVariables = {
+    DBUS_SESSION_BUS_ADDRESS = "unix:path=$DBUS_LAUNCHD_SESSION_BUS_SOCKET";
+  };
 }

@@ -26,6 +26,7 @@
     ./home/programs/obs.nix
     ./home/programs/mpv.nix
     ./home/programs/thunar.nix
+    ./home/programs/zathura.nix
     ./home/services/hypridle.nix
     ./home/services/hyprpaper.nix
     ./home/services/mako.nix
