@@ -12,7 +12,7 @@
     mac-app-util.url = "github:hraban/mac-app-util";
   };
 
-  outputs = { nixpkgs, home-manager, flake-utils, darwin, mac-app-util, ... } @ inputs: { 
+  outputs = { nixpkgs, home-manager, darwin, mac-app-util, ... } @ inputs: { 
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
       modules = [

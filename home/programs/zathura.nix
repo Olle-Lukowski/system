@@ -33,6 +33,7 @@
 
       recolor-lightcolor          = "#${base00}";
       recolor-darkcolor           = "#${base06}";
+      font = "Fira Code normal 12";
     };
   };
 }

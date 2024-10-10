@@ -115,7 +115,7 @@
 			}
 			{
 			  action = "<CMD>lua require 'luasnip'.expand()<CR>";
-				key = "<Tab>";
+				key = "<C-Tab>";
 				options = {
 				  desc = "Expand snippet";
 				};
