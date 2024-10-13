@@ -9,6 +9,7 @@
       size = 15;
     };
     settings = with config.colorScheme.palette; {
+      macos_option_as_alt = "yes";
       background = "#${base00}";
       foreground = "#${base05}";
 

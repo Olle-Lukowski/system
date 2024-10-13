@@ -21,6 +21,7 @@
     ./home/programs/bacon.nix
     ./home/programs/vesktop.nix
     ./home/programs/zathura.nix
+    ./home/programs/helix.nix
   ];
 
   colorScheme = inputs.nix-colors.colorSchemes.gruvbox-dark-medium;
